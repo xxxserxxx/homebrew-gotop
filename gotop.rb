@@ -1,13 +1,13 @@
 class Gotop < Formula
-  version "3.3.2"
+  version "v3.5.0"
   desc "A terminal based graphical activity monitor inspired by gtop and vtop"
   homepage "https://github.com/xxxserxxx/gotop"
-  url "https://github.com/xxxserxxx/gotop/releases/download/v#{version}/gotop_#{version}_darwin_amd64.tgz"
-  sha256 "aaf63438179befa1b19515258910a64317126be9348040298e87162998645d46"
+  url "https://github.com/xxxserxxx/gotop/releases/download/vv3.5.0/gotop_v3.5.0_darwin_amd64.tgz"
+  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
 
   if OS.linux?
-    url "https://github.com/xxxserxxx/gotop/releases/download/v#{version}/gotop_#{version}_linux_amd64.tgz"
-    sha256 "768766ed3a366f48412498314bbe1b341629dde09de18121f787b52d5f52775b"
+    url "https://github.com/xxxserxxx/gotop/releases/download/vv3.5.0/gotop_v3.5.0_linux_amd64.tgz"
+    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   end
 
   def install
