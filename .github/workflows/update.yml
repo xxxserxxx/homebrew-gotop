@@ -16,9 +16,10 @@ jobs:
         shell: bash
         run: ./update.sh "${{ github.event.client_payload.tag }}"
 
-      - uses: stefanzweifel/git-auto-commit-action@v4.0.0
+      - uses: stefanzweifel/git-auto-commit-action@v4.1.0
         with:
             commit_message: Update recipe to version "${{ github.event.client_payload.tag }}"
+            tagging_message: ${{ github.event.client_payload.tag }}
 
             # Optional glob pattern of files which should be added to the commit
             file_pattern: gotop.rb
