@@ -3,14 +3,13 @@ class Gotop < Formula
   desc "A terminal based graphical activity monitor inspired by gtop and vtop"
   homepage "https://github.com/xxxserxxx/gotop"
   url "https://github.com/xxxserxxx/gotop/releases/download/v#{version}/gotop_v#{version}_#{OS.linux? ? 'linux' : 'darwin'}_amd64.tgz"
-  sha256 "caefde24a2b8534bb9a6a05d8b886bcd32216761384026b399da1a713a22070e"
+  sha256 "323ecffc960e4a3d6e09caa0ee81e3a8179649a1ba68e2bf64abae7714531581"
 
   if OS.linux?
-    sha256 "90fd3c4b451f873a009da08b93f8dd908f1236e69adf4d91159e01136d323cd1"
+    sha256 "25296fb369fe977fd32fd6984a6b80b64fea29a32f35b22498c6c18716cf3b19"
   end
 
   def install
-    mv "gotop_v#{version}_#{OS.linux? ? 'linux' : 'darwin'}_amd64", "gotop"
     bin.install "gotop"
   end
 end
