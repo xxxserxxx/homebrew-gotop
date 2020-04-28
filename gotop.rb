@@ -1,5 +1,5 @@
 class Gotop < Formula
-  version "v3.5.1"
+  version "v3.5.2"
   desc "A terminal based graphical activity monitor inspired by gtop and vtop"
   homepage "https://github.com/xxxserxxx/gotop"
   url "https://github.com/xxxserxxx/gotop/releases/download/#{version}/gotop_#{version}_#{OS.linux? ? 'linux' : 'darwin'}_amd64.tgz"
